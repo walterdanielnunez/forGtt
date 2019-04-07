@@ -1,0 +1,43 @@
+<div class="pgTitle">Agendar Operação</div>
+
+<form class="myForm" id="addAgenda" onsubmit="addAgenda(); return false;">
+	<div class="field">
+		<label>Motorista</label>
+		<select name="motorista" id="selMotorista" required>
+		
+		</select>
+	</div>
+
+	<div class="field">
+		<label>Veículo</label>
+		<select name="veiculo" id="selVeiculo" required>
+		
+		</select>
+	</div>
+
+	<div class="field">
+		<label>Data de Entrada</label>
+		<input type="date" name="entrada" required>
+	</div>
+
+	<div class="field">
+		<label>Data de Saída</label>
+		<input type="date" name="saida" required>
+	</div>
+
+	<div class="field">
+		<label>Operação</label>
+		<select name="operacao">
+			<option value="Carga">Carga</option>
+			<option value="Descarga">Descarga</option>
+		</select>
+	</div>
+
+	<button class="bt">Salvar</button>
+
+</form>
+
+<script type="text/javascript">
+	selMotorista();
+	selVeiculos();
+</script>

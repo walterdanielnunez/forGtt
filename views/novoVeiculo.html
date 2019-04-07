@@ -1,0 +1,53 @@
+<div class="pgTitle">Cadastrar Veículo</div>
+
+<form class="myForm" id="addVeiculo" onsubmit="addVeiculo(); return false;">
+	<div class="field">
+		<label>Placa</label>
+		<input type="text" name="placa" maxlength="8" class="uper" required autofocus>
+	</div>
+
+	<div class="field">
+		<label>Renavam</label>
+		<input type="text" name="renavam" required>
+	</div>
+
+	<div class="field">
+		<label>Ano Fabricação</label>
+		<input type="text" maxlength="4" name="anoFab" onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
+	</div>
+
+	<div class="field">
+		<label>Ano Compra</label>
+		<input type="text" maxlength="4" name="anoComp" onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
+	</div>
+
+	<div class="field">
+		<label>Carga Máxima Kg</label>
+		<input type="text" name="cargaMax" onkeyup="this.value=this.value.replace(/[^\d]/,'')" required>
+	</div>
+
+	<div class="field">
+		<label>Nro de Eixos</label>
+		
+		<select name="eixos">
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+		</select>
+
+	</div>
+
+	<div class="field">
+		<label>Cumprimento (metros)</label>
+		<input type="number" name="cumprimento" step="0.1" required>
+	</div>
+
+	<button class="bt">Salvar</button>
+
+</form>
